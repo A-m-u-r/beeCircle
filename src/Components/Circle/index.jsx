@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 
-// Компонент Circle
 const Circle = ({size, position, color, onDragEnd, onDelete, isSelected, onSelect, onDeselect}) => {
     // Состояние для отслеживания, перетаскивается ли круг
     const [isDragging, setIsDragging] = useState(false);
@@ -26,8 +25,6 @@ const Circle = ({size, position, color, onDragEnd, onDelete, isSelected, onSelec
 
         document.addEventListener('mousemove', handleMouseMove);
         document.addEventListener('mouseup', handleMouseUp);
-
-        // Очистить обработчики событий при размонтировании компонента
         return () => {
             document.removeEventListener('mousemove', handleMouseMove);
             document.removeEventListener('mouseup', handleMouseUp);

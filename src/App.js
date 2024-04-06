@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import Circle from "./Components/Circle";
 
-// Компонент App
 const App = () => {
     // Состояние для хранения списка кругов
     const [circles, setCircles] = useState([]);
